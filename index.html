@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Drawing</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color:deeppink; */
+    }
+    body{
+        text-align: center;
+
+        
+    }
+    .main_container{
+        margin: 5px auto 0;
+        width: 700px;
+        height: 610px;
+       
+        position: relative;
+}
+.row_color{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 590px;
+    width: 600px;
+    z-index: 1000;
+}
+li{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+   z-index: 10000;
+
+}
+.row_color div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left:100px ;
+}
+.column_color div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.column_color{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top:0;
+    height: 590px;
+    width: 700px;
+    list-style: none;
+
+    
+}
+.roof{
+    width: 400px;
+    height: 50px;
+    border: 2px  solid;
+   
+    position: absolute;
+    top:100px;
+    left: 150px;
+}
+.body{
+    width:300px ;
+    height: 300px;
+    border: 2px  solid;
+    border-top:2px white ;
+    position: absolute;
+    top:149px;
+    left: 200px;
+}
+.window{
+    width: 100px;
+    height: 100px;
+    border: 2px  solid;
+    
+    position: absolute;
+    top:190px;
+    left: 220px;
+}
+.door{
+    width: 100px;
+    height: 250px;
+    border: 2px  solid;
+    
+    position: absolute;
+    top:190px;
+    left: 390px;
+}
+
+</style>
+<body>
+    <div class="main_container">
+        <ul class="row_color">
+            <div>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        </ul>
+        <ul class="column_color">
+            <div>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        </ul>
+    <div class="roof house"></div>
+    <div class="body house"></div>
+    <div class="window house"></div>
+    <div class="door house"></div>
+    
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
